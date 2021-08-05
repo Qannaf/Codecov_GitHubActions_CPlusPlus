@@ -1,0 +1,2 @@
+C:\Users\qanna\OneDrive\Bureau\bureau Besncon\HelloCovDemo\x64\Debug\HelloCov.pdb
+C:\Users\qanna\OneDrive\Bureau\bureau Besncon\HelloCovDemo\HelloCov\x64\Debug\HelloCov.pdb
