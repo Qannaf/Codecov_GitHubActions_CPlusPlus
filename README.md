@@ -83,7 +83,7 @@
 <pre><code class="lang-cmd hljs dos">OpenCppCoverage --sources HelloCov -- "C:<span class="hljs-symbol">\P</span>rogram Files (x86)<span class="hljs-symbol">\M</span>icrosoft Visual Studio<span class="hljs-symbol">\<span class="hljs-number">2</span></span><span class="hljs-number">019</span><span class="hljs-symbol">\C</span>ommunity<span class="hljs-symbol">\C</span>ommon7<span class="hljs-symbol">\I</span>DE<span class="hljs-symbol">\C</span>ommonExtensions<span class="hljs-symbol">\M</span>icrosoft<span class="hljs-symbol">\T</span>estWindow<span class="hljs-symbol">\v</span>stest.console.exe" debug/HelloTest.dll
 </code></pre>
 <p>The path of&nbsp;<code>vstest.console.exe</code>&nbsp;depends on your version of Visual Studio, so update it accordingly. The report will be generated in the folder&nbsp;<code>CodeCoverage-&lt;Timestamp&gt;</code>. You can view it by opening&nbsp;<code>index.html</code>&nbsp;in a browser. On navigating to the report for&nbsp;<code>HelloTest.dll</code>&nbsp;&gt;&nbsp;<code>HelloCov.cpp</code>, you will see the line coverage like below:</p>
-<p><img src="https://about.codecov.io/wp-content/uploads/2021/06/qaeNYKL.png" alt="Capture of line coverage"></p>
+<p><img src="images/qaeNYKL.png" alt="Capture of line coverage"></p>
 <h2 id="configuring-github-actions">Configuring GitHub Actions</h2>
 <p>Coverage reports are most useful when making changes to your code. In this section, you will integrate Codecov into your workflow so that you are able to view reports on pull requests or pushes to your repo.</p>
 <h3 id="1-repo">1. Repo</h3>
@@ -134,9 +134,9 @@
 <p>If the workflow succeeds, at the end of logs for the upload action, there will be a link to the Codecov report like below:</p>
 <p><img src="https://about.codecov.io/wp-content/uploads/2021/06/D2NdzXo.png" alt="report"></p>
 <p>Navigate to the link for a detailed report including the conspicuous coverage percentage. Under the Files tab, you can view line-by-line coverage for each file.</p>
-<p><img src="https://about.codecov.io/wp-content/uploads/2021/06/z1Yi7ZE.png" alt="linecoverage"></p>
+<p><img src="images/z1Yi7ZE.png" alt="linecoverage"></p>
 <p>Under the Graphs tab, you can view graphical representations of your coverage, like the sunburst below:</p>
-<p><img src="https://about.codecov.io/wp-content/uploads/2021/06/LcSojru.png" alt="Sunburst"></p>
+<p><img src="images/LcSojru.png" alt="Sunburst"></p>
 <p><a href="https://docs.codecov.io/docs/graphs#sunburst">Sunburst graphs</a>&nbsp;enable you to navigate into project folders in order to discover files that lack coverage. The size of each slice is proportional to the number of coverage lines and the color indicates coverage. Click on a block to enter a folder and click the innermost circle to leave it.</p>
 <h3 id="5-change-report">5. Change Report</h3>
 <p>To view coverage reports as comments on pull requests, set up as follows:</p>
@@ -150,24 +150,8 @@
 }
 </code></pre>
 <p>Push and create a pull request from the branch. You should see a report like below on the pull request when the actions complete:</p>
-<p><img src="https://about.codecov.io/wp-content/uploads/2021/06/wQh4cVS.png" alt="PR comment"></p>
+<p><img src="images/wQh4cVS.png" alt="PR comment"></p>
 <p>Observe that coverage increases as expected.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Code coverage is vital to ensuring that your software quality stays consistent over time. Now you should have a good grasp of how to integrate C++ code coverage reports in your CI workflows with Codecov in order to ensure you won’t fall behind on your coverage.</p>
 <p>Although the tutorial was specifically for Windows, Codecov is platform-agnostic and can be configured not only with other C++ toolchains but also other languages and code-hosting platforms.</p>
-
-                    
-                
-                
-                <div class="row my-5 text-center align-items-center d-none">
-
-                    <div class="col-lg-6 text-left">
-                        <h6>Previous Post</h6>
-                        <a href="https://about.codecov.io/blog/how-codecov-is-improving-its-security-posture/" rel="prev">How Codecov Is Reinforcing Its Security Posture</a>                    </div>
-                    <div class="col-lg-6 text-right">
-                        <h6>Next Post</h6>
-                        <a href="https://about.codecov.io/blog/how-to-set-up-codecov-with-scala-and-github-actions/" rel="next">How to Set Up Codecov with Scala and GitHub Actions</a>                    </div>
-
-                </div>
-
-            </div>
