@@ -1,4 +1,4 @@
-#include<iostream>
+//#include<iostream>
 #include "HelloCov.h"
 
 bool is_power_of_two(int n)
@@ -19,7 +19,7 @@ int divide_by_two(int n)
     return n >> 1;
 }
 
-
+/*
 int main(int argc, char** argv)
 {
     std::cout << "4 is power of two?" << is_power_of_two(4) << "\n";
