@@ -132,7 +132,7 @@
 <p>The actions are described by their respective&nbsp;<code>name</code>&nbsp;properties. They mirror what we manually did to generate local reports i.e setup, build, test,k and coverage. Of importance are the last two actions that generate and upload the report. The&nbsp;<code>OpenCppCoverage</code>&nbsp;command is similar to the one used locally, and the&nbsp;<code>export_type</code>&nbsp;parameter is added to get the report in xml, one of the Codecov supported formats. The absolute path of vstest is not required since&nbsp;<code>setup_vstest</code>&nbsp;action added it to global PATH. When you push this change you can monitor the workflow from the Actions tab of the repo on GitHub.</p>
 <h3 id="4-view-codecov-report">4. View Codecov Report</h3>
 <p>If the workflow succeeds, at the end of logs for the upload action, there will be a link to the Codecov report like below:</p>
-<p><img src="https://about.codecov.io/wp-content/uploads/2021/06/D2NdzXo.png" alt="report"></p>
+<p><img src="images/D2NdzXo.png" alt="report"></p>
 <p>Navigate to the link for a detailed report including the conspicuous coverage percentage. Under the Files tab, you can view line-by-line coverage for each file.</p>
 <p><img src="images/z1Yi7ZE.png" alt="linecoverage"></p>
 <p>Under the Graphs tab, you can view graphical representations of your coverage, like the sunburst below:</p>
